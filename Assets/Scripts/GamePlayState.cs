@@ -10,6 +10,7 @@ public class GamePlayState : MonoBehaviour
     private void OnEnable()
     {
         currentScore = 0;
+        FindObjectOfType<CubeSpawner>().SpawnCube();
         FindObjectOfType<TapToJump>().canJump = true;
     }
     private void OnDisable()

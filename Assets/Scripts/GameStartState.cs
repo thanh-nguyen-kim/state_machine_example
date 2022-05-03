@@ -14,7 +14,6 @@ public class GameStartState : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            FindObjectOfType<CubeSpawner>().SpawnCube();
             GetComponent<State>().Next();
         }
     }
